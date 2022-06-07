@@ -1,0 +1,1082 @@
+/* Estructura General del body */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: white; 
+    padding-top: 100px;
+}
+
+/* Estructura General de la Barra de Navegación */
+
+#barra-navegacion{
+    background: black; 
+    height: 80px;
+    width: 95.5%;
+    position:fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 0px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-size:25px;
+    padding:10px 30px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+#menu a:active {
+    color: #f30a16;
+    background: rgba(182, 31, 20, 0.151);
+}
+
+#menu ul li {
+    position:relative;
+    font-weight: bold;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#menu ul li:hover {
+    background: rgba(202, 218, 233, 0.521);
+}
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:rgb(43, 95, 95); 
+    padding:0;
+}
+ 
+#menu ul li:hover > ul {
+    display:block;
+}
+
+/* Estructura General de la Primera Sección */
+
+#primera-seccion {
+    background: rgb(12, 12, 12);
+    height:100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 5px 60px;
+    font-size: 25px;
+    box-shadow: 10px 10px #f00612;
+}
+
+/* Inicio Animación Cargando */
+
+.loader {
+    width: 140px;
+    height: 95px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.loader span {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.ball {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #f00612;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: bounce .5s alternate infinite;
+}
+
+.ball:nth-child(2) {
+    animation-delay: .16s;
+}
+
+.ball:nth-child(3) {
+    animation-delay: .32s;
+}
+
+@keyframes bounce {
+    from {
+        transform: scaleX(1.25);
+    }
+    to {
+        transform:
+        translateY(-50px) scaleX(1);
+    }
+}
+
+/* Fin Animación Cargando */
+
+/* Estructura General de la Segunda Sección */
+
+#segunda-seccion {
+    height: 360px;
+    background: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    flex-direction:row;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card_img{
+    border: white 8px solid;
+    margin: 5px;
+    transition: transform .3s; /* Animation */
+}
+
+.card_img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Rotacion */
+
+#imag-dog {
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); /* IE 9 */
+    -webkit-transform:rotate(10deg); /* Opera, Chrome, and Safari */
+}
+
+.card-texto {
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Inicio de RRSS */
+
+.social {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+#tercera-seccion {
+    height: 360px;
+    background: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    flex-direction:row;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card_img{
+    border: white 8px solid;
+    margin: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#cuarta-seccion {
+    height: 490px;
+    background: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    flex-direction:row;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card_img{
+    border: white 8px solid;
+    margin: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#quinta-seccion {
+    height: 360px;
+    background: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    flex-direction:row;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card_img{
+    border: white 8px solid;
+    margin: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#sexta-seccion {
+    height: 360px;
+    background: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 10px;
+    flex-direction:row;
+    margin: 20px 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px #f00612;
+}
+
+.card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.card_img{
+    border: white 8px solid;
+    margin: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Inicio Footer */
+
+footer{
+    height: 80px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+    padding: 2px 10px;
+    box-shadow: 10px 10px #f00612;
+}
+  
+.contenidofooter {
+    height: 90px;
+    margin-left: 10px;
+}
+  
+footer p {
+    height: 90px;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* ** ***** ####################     Text Box    #################### ***** ** */
+  
+.text-box{
+    overflow-x: hidden;
+    padding:5px;
+}
+  
+.text-box h2 {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    position: relative;
+}
+  
+.text-box h2::before, h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+  
+.text-box h2::before {
+    background: #000;
+    animation:  type 3s steps(25) 1s forwards infinite;
+    width: 100%;
+}
+
+.text-box span {
+    color: #4E91FB;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+  .text-box h2::after {
+    opacity: 1;
+    width: 2px; 
+    background: #fff;
+    color:#fff;
+    animation:  type 3s steps(25) 1s forwards infinite,
+                blink 0.6s steps(15) infinite;
+  }
+  
+  
+  @keyframes type {
+    to {
+      left: 110%;
+    }
+  }
+  
+  @keyframes blink {
+    0% , 50%{
+      opacity: 0;
+    } 
+    51%, 100% {
+       opacity: 1;
+    }
+  }
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############          Escritorio 1600 x 1200         ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+ 
+@media all and (max-width: 1600px) {
+  
+    body {
+        background-color: rgb(12, 236, 187);
+    }
+
+    #barra-navegacion  {
+        margin: 10px 20px 20px 20px
+    }
+    
+    #barra-navegacion img {
+      height: 3em; 
+      width: 100%;
+    }
+  
+    #menu ul a {
+      font-size: 18px;
+      padding: 3px 10px;
+      letter-spacing:1px;
+    }
+  
+    #primera-seccion {
+      height: 80px;
+      padding: 0px 20px 10px 20px;
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:space-between;
+      box-shadow: 10px 10px #f00612;
+    }
+
+    /* ** ***** ####################     Primera Sección    #################### ***** ** */
+  
+  
+    #primera-seccion .card {
+      height: 80px;
+      line-height: 80px;
+    }
+  
+   .card h1 {
+      font-size: 20px;
+      margin: 0px;
+    }
+  
+    .loader {
+      width: 4em;
+      height: 4.5em;
+    }
+  
+    .loader span {
+      font-size:12px;
+      margin: 2px;
+    }
+  
+    .ball {
+      width: 9px;
+      height: 9px;
+      border: 1px solid #f00612;
+    }
+
+    /* ** ***** ####################     Segunda Sección    #################### ***** ** */
+  
+    .card{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .card_img {
+        width: 80%;
+       
+        border: white 8px solid;
+        margin: 4px;
+        transition: transform .3s; /* Animation */
+    }
+
+    .card_img img {
+        width: 100%;
+    }
+    
+    .card_img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    
+    /* Rotacion */
+    
+    #imag-dog {
+        transform:rotate(10deg);
+        -ms-transform:rotate(10deg); /* IE 9 */
+        -webkit-transform:rotate(10deg); /* Opera, Chrome, and Safari */
+    }
+    
+    .card-texto {
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+  
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content:flex-start;
+      height: 120px;
+      background: black;
+      box-shadow: 10px 10px #f00612;
+      padding: 1px 10px;
+    }
+  
+    .contenidofooter {
+        height: 2.8em;
+        min-width: 7.5em;
+        margin: auto;
+    }
+  
+    .contenidofooter p {
+        height: 2.8em;
+        margin: 3px;
+        float: left;
+        text-align: left;
+        font-size: 18px;
+    }
+  
+    .icon {
+      padding: 10px 2px 2px 2px;
+    }
+  
+    /* ** ***** ####################     Text Box     #################### ***** ** */
+  
+    .text-box{
+      overflow-x: hidden;
+      padding: 2px;
+      min-width: 7.5em;
+      margin: auto;
+    }
+  
+    .text-box h2 {
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+      position: relative;
+      margin: 5px;
+    }
+  
+    .text-box h2::before, h2::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  
+    .text-box h2::before {
+      background: #000;
+      animation:  type 6s steps(25) 10s forwards infinite;
+      width: 100%;
+    }
+  
+    .text-box span{
+      color: #4E91FB;
+      font-weight: 900;
+      font-size: 0.8em;
+    }
+  
+    .text-box h2::after {
+      opacity: 1;
+      width: 2px; 
+      background: #fff;
+      color:#fff;
+      animation:  type 3s steps(25) 1s forwards infinite,
+                  blink 0.6s steps(15) infinite;
+    }
+  
+} 
+  
+  /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+  /* ** ***** ####################     Responsive Notebooks   #################### ***** ** */
+  /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+  
+  @media all and (max-width: 1023px) {
+  
+    body {
+      background-color: rgb(11, 26, 240);
+    }
+  
+    #barra-navegacion  {
+        margin: 10px 20px 20px 20px
+    }
+    
+    #barra-navegacion img {
+      height: 3em; 
+      width: 100%;
+    }
+  
+    #menu ul a {
+      font-size: 16px;
+      padding: 3px 10px;
+      letter-spacing:1px;
+    }
+      
+    #primera-seccion {
+        margin: 10px 20px 20px 20px;
+    }
+  
+    #primera-seccion {
+      height: 80px;
+      padding: 0px 20px 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:space-between;
+      box-shadow: 10px 10px #f00612;
+    }
+
+    /* ** ***** ####################     Primera Sección    #################### ***** ** */
+  
+    #primera-seccion .card {
+      height: 80px;
+      line-height: 80px;
+    }
+  
+   .card h1 {
+      font-size: 14px;
+      margin: 0px;
+    }
+  
+    .loader {
+      width: 3em;
+      height: 4em;
+    }
+  
+    .loader span {
+      font-size:8px;
+      margin: 2px;
+    }
+  
+    .ball {
+      width: 9px;
+      height: 9px;
+      border: 1px solid #f00612;
+    }
+
+    /* ** ***** ####################     Segunda Sección    #################### ***** ** */
+  
+    #segunda-seccion {
+        height: 310px;
+        gap: 5px;
+        flex-direction:row;
+        margin: 10px 20px;
+        padding: 10px 5px;
+        box-shadow: 10px 10px #f00612;
+    }
+
+    .card{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .card_img {
+        width: 95%;
+        height: 250px;
+        border: white 4px solid;
+        margin: 2px;
+        transition: transform .3s; /* Animation */
+    }
+
+    .card_img img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .card_img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    
+    /* Rotacion */
+    
+    #imag-dog {
+        transform:rotate(10deg);
+        -ms-transform:rotate(10deg); /* IE 9 */
+        -webkit-transform:rotate(10deg); /* Opera, Chrome, and Safari */
+    }
+    
+    .card-texto {
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .card-texto h4 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    .card-texto img {
+        width: 80%;
+        height: 80%;
+    }
+
+/* ** ***** ####################     Tercera Sección   #################### ***** ** */
+    
+    #tercera-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Cuarta Sección   #################### ***** ** */
+
+    #cuarta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Quinta Sección   #################### ***** ** */
+    
+    #quinta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Sexta Sección   #################### ***** ** */
+
+    #sexta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+  
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content:flex-start;
+      height: 130px;
+      background: black;
+      box-shadow: 10px 10px #f00612;
+      padding: 1px 10px;
+    }
+  
+    .contenidofooter {
+        height: 2.8em;
+        min-width: 7.5em;
+        margin: auto;
+    }
+  
+    .contenidofooter p {
+        height: 2.8em;
+        margin: 3px;
+        float: left;
+        text-align: left;
+        font-size: 13px;
+    }
+  
+    .icon {
+      padding: 10px 2px 2px 2px;
+    }
+
+    .icon img {
+        width: 20%;
+        height: 25px;
+    }
+  
+    /* ** ***** ####################     Text Box     #################### ***** ** */
+  
+    .text-box{
+      overflow-x: hidden;
+      padding: 2px;
+      min-width: 7.5em;
+      margin: auto;
+    }
+  
+    .text-box h2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+      position: relative;
+      margin: 5px;
+    }
+  
+    .text-box h2::before, h2::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  
+    .text-box h2::before {
+      background: #000;
+      animation:  type 6s steps(25) 10s forwards infinite;
+      width: 100%;
+    }
+  
+    .text-box span{
+      color: #4E91FB;
+      font-weight: 900;
+      font-size: 0.8em;
+    }
+  
+    .text-box h2::after {
+      opacity: 1;
+      width: 2px; 
+      background: #fff;
+      color:#fff;
+      animation:  type 3s steps(25) 1s forwards infinite,
+                  blink 0.6s steps(15) infinite;
+    }
+  
+}
+  
+  /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+  /* ** ***** ####################     Responsive Celulares    #################### ***** ** */
+  /* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+  
+@media all and (max-width: 599px) {
+  
+      html {
+          min-width: 32vw;
+      }
+  
+      body {
+          background-color: rgb(240, 224, 11);
+      }
+  
+      #barra-navegacion  {
+        margin: 10px 20px 20px 20px
+    }
+    
+    #barra-navegacion img {
+      height: 3em; 
+      width: 100%;
+    }
+  
+    #menu ul a {
+      font-size: 16px;
+      padding: 3px 10px;
+      letter-spacing:1px;
+    }
+  
+    #primera-seccion {
+      height: 80px;
+      padding: 0px 20px 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:space-between;
+      box-shadow: 10px 10px #f00612;
+    }
+
+    /* ** ***** ####################     Primera Sección    #################### ***** ** */
+  
+    #primera-seccion {
+        margin: 10px 20px 20px 20px;
+    }
+
+    #primera-seccion .card {
+      height: 70px;
+      line-height: 70px;
+    }
+  
+   .card h1 {
+      font-size: 12px;
+      margin: 0px;
+    }
+  
+    .loader {
+      width: 2em;
+      height: 3em;
+    }
+  
+    .loader span {
+      font-size:5px;
+      margin: 1px;
+    }
+  
+    .ball {
+      width: 5px;
+      height: 5px;
+      border: 1px solid #f00612;
+    }
+
+    /* ** ***** ####################     Segunda Sección    #################### ***** ** */
+  
+    #segunda-seccion {
+        height: 310px;
+        gap: 5px;
+        flex-direction:row;
+        margin: 10px 20px;
+        padding: 10px 5px;
+        box-shadow: 10px 10px #f00612;
+    }
+
+    .card{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .card_img {
+        width: 95%;
+        height: 250px;
+        border: white 4px solid;
+        margin: 2px;
+        transition: transform .3s; /* Animation */
+    }
+
+    .card_img img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .card_img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    
+    /* Rotacion */
+    
+    #imag-dog {
+        transform:rotate(10deg);
+        -ms-transform:rotate(10deg); /* IE 9 */
+        -webkit-transform:rotate(10deg); /* Opera, Chrome, and Safari */
+    }
+    
+    .card-texto {
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .card-texto h4 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    .card-texto img {
+        width: 80%;
+        height: 80%;
+    }
+
+/* ** ***** ####################     Tercera Sección   #################### ***** ** */
+    
+    #tercera-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Tercera Sección   #################### ***** ** */
+
+    #cuarta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Tercera Sección   #################### ***** ** */
+    
+    #quinta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Tercera Sección   #################### ***** ** */
+
+    #sexta-seccion {
+        height: 310px;
+    }
+
+    /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+  
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content:flex-start;
+      height: 130px;
+      background: black;
+      box-shadow: 10px 10px #f00612;
+      padding: 1px 10px;
+    }
+  
+    .contenidofooter {
+        height: 2.8em;
+        min-width: 7.5em;
+        margin: auto;
+    }
+  
+    .contenidofooter p {
+        height: 2.8em;
+        margin: 3px;
+        float: left;
+        text-align: left;
+        font-size: 13px;
+    }
+  
+    .icon {
+      padding: 10px 2px 2px 2px;
+    }
+
+    .icon img {
+        width: 20%;
+        height: 25px;
+    }
+  
+    /* ** ***** ####################     Text Box     #################### ***** ** */
+  
+    .text-box{
+      overflow-x: hidden;
+      padding: 2px;
+      min-width: 7.5em;
+      margin: auto;
+    }
+  
+    .text-box h2 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+      position: relative;
+      margin: 5px;
+    }
+  
+    .text-box h2::before, h2::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  
+    .text-box h2::before {
+      background: #000;
+      animation:  type 6s steps(25) 10s forwards infinite;
+      width: 100%;
+    }
+  
+    .text-box span{
+      color: #4E91FB;
+      font-weight: 900;
+      font-size: 0.8em;
+    }
+  
+    .text-box h2::after {
+      opacity: 1;
+      width: 2px; 
+      background: #fff;
+      color:#fff;
+      animation:  type 3s steps(25) 1s forwards infinite,
+                  blink 0.6s steps(15) infinite;
+    }
+}

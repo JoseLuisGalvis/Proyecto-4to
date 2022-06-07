@@ -1,0 +1,796 @@
+/* Estructura General del body */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 4.2em;
+}
+
+/* */
+/* ** ***** ####################  Estructura General de la Barra de Navegación  #################### ***** ** */
+
+#barra-navegacion{
+  background: black; 
+  height: 4em;
+  width: 95%;
+  position:fixed;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.416em 0.83em 0.83em 0.83em;
+  padding: 0em 1.25em;
+  box-shadow: 0.416em 0.416em #f00612;
+}
+
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-size: 1.1em;
+  padding: 0.625em 1.25em;
+  text-transform:uppercase;
+  letter-spacing: 0.0625em;
+}
+
+#menu a:active {
+color: #f30a16;
+background: rgba(182, 31, 20, 0.151);
+}
+
+#menu ul li {
+  position:relative;
+  font-weight: bold;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu ul li:hover {
+  background: rgba(202, 218, 233, 0.521);
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:rgb(43, 95, 95); 
+  padding:0;
+}
+
+#menu ul li:hover > ul {
+  display:block;
+}
+
+/* */
+/* Estructura General de la Portada */
+
+#portada {
+    height: 33em;
+    float: left;
+    position: relative;
+    width: 98.8%;
+    color: #ffffff;
+    margin: 0.5em 0.9em 1.1em 0.3em;
+    padding: 0em;
+    box-shadow: 0.416em 0.416em #f00612;
+}
+
+.container-video {
+  height: 33em;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+#myVideo {
+  height: 33em;
+  background-image: url(file:///C:/Users/Jos%C3%A9%20Luis/Desktop/C22067_DNI96065434/4img_pag1/indexF115.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  float: left;
+  position: absolute;
+  width: 99.4%;
+  z-index: -100;
+  margin: 0.5em 0em 1em 0.5em;
+}
+/* Este es el background del Botón de Pausar el Video */
+.content {
+  float: left;
+  position: absolute;
+  width: 94.5%;
+  bottom: 1em;
+  background: rgba(46, 45, 45, 0.418);
+  color: #f1f1f1;
+  margin: 0em 0em 0em 0.5em;
+  padding: 0.7em 2em;
+}
+
+#myBtn-portada {
+  width: 5em;
+  padding: 0.5em;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn-portada:hover {
+  background: #ddd;
+  color: black;
+}
+
+.content button{
+  display: inline-block;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 0.2em 2em;
+  box-shadow: 0.14em 0.14em #f00612;
+  border-radius: 0.45em;
+}
+
+button:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow:
+    0 0 1.14em #5ddcff,
+    0 0 3.1em #4e00c2;
+  }
+}
+
+/* ** ***** ####################     Estructura General de la Primera Sección     #################### ***** ** */
+
+#primera-seccion {
+    height: 25em;
+    width: 94.5%;
+    background-image: url(file:///C:/Users/Jos%C3%A9%20Luis/Desktop/C22067_DNI96065434/4img_pag1/indexF115.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    gap: 4rem;
+    margin: auto;
+    padding: 1em 1em 1em 2em;
+    box-shadow: 0.416em 0.416em #f00612;
+}
+
+/* Inicio del main para etiquetas de rrss*/
+
+.social {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+/* ** ***** ###################    Animacion Carrusel Fotos   ################### ***** **  */
+
+.carrusel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+}
+
+#datos {
+  background-color: black;
+  color: azure;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.slider{
+  width: 100%;
+  height: 17em;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 0.3em;
+}
+
+.slider ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 700%;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 100%;
+  height: 70%;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  13%{margin-left: 0;}
+  
+  14%{margin-left: -100%;}
+  28%{margin-left: -100%;}
+  
+  29%{margin-left: -200%;}
+  43%{margin-left: -200%;}
+  
+  44%{margin-left: -300%;}
+  58%{margin-left: -300%;}
+
+  59%{margin-left: -400%;}
+  73%{margin-left: -400%;}
+
+  74%{margin-left: -500%;}
+  88%{margin-left: -500%;}
+
+  89%{margin-left:  -600%;}
+  100%{margin-left: -600%;}
+}
+
+/* ** ***** ###################    Formulario   ################### ***** **  */
+
+.formulario {
+  margin: 0 auto;
+}
+
+.content-form {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 15em;
+  padding: 0.5em;
+  height: 90%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  height: 90%;
+  font-size: 1.5em;
+  margin:0.1em 0 0.2em 0;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 0.8em 0 rgba(255, 255, 255, .3);
+  width: 100%;
+  height: 90%;
+}
+
+.contact-wrapper > * {
+  padding: 0.5em;
+}
+
+.contact-form {
+  background: #222222;
+  width: 95%;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 0.4em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 90%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+  background: #B70E21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+  width: 90%;
+}
+
+.contact-info h4 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* LARGE SIZE */
+@media(min-width: 1600px) {
+
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 1em 0.5em 1em 1em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+
+  input[type=button] {
+    text-align:center;
+  }
+}
+
+/*############################## **  *****  Footer *****  ** ##############################*/
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.75em;
+  background: black;
+  margin: 0.8em;
+  box-shadow: 0.416em 0.416em #f00612;
+  padding: 0.083em 0.6em
+}
+
+/*############################## **  *****  Mensaje Footer *****  ** ##############################*/
+
+.contenidofooter {
+  margin-left: 0.416em;
+}
+
+footer p {
+    margin: 0.416em;
+    float: left;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+/*############################## **  *****  Text Box - Footer *****  ** ##############################*/
+
+.text-box{
+  overflow-x: hidden;
+  background:#000;
+  padding:0.05em;
+}
+
+.text-box h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  position: relative;
+}
+
+.text-box h2::before, h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.text-box h2::before {
+  background: #000;
+  animation:  type 3s steps(25) 1s forwards infinite;
+  width: 100%;
+}
+
+.text-box span{
+  color: #4E91FB;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.text-box h2::after {
+  opacity: 1;
+  width: 2px; 
+  background: #fff;
+  color:#fff;
+  animation:  type 3s steps(25) 1s forwards infinite,
+              blink 0.6s steps(15) infinite;
+}
+
+@keyframes type {
+  to {
+    left: 110%;
+  }
+}
+
+@keyframes blink {
+  0% , 50%{
+    opacity: 0;
+  } 
+  51%, 100% {
+     opacity: 1;
+  }
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############          Escritorio 1880       ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1880px) {
+
+  body {
+    background-color: rgba(240, 11, 30, 0.171);
+  }
+
+  /* ############## **  *****     Barra de Navegación    *****  ** ################ */
+
+  #menu ul a {
+    font-size: 1em;
+    padding: 0.525em 1.15em;
+    letter-spacing: 0.0425em;
+  }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 1600            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1600px) {
+
+  body {
+    background-color: rgb(30, 240, 11);
+  }
+
+  /* ############## **  *****     Barra de Navegación    *****  ** ################ */
+
+  #menu ul a {
+    font-size: 0.7em;
+    padding: 0.525em 1em;
+    letter-spacing: 0.0325em;
+  }
+
+  /* ############## **  *****     Primera Seccion    *****  ** ################ */
+
+  #primera-seccion {
+    gap: 3rem;
+  }
+
+  .contact-form form p {
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0.2em;
+  }
+
+  .contact-info {
+    width: 95%;
+    padding: 0em 0.2em 0.2em 0.5em;
+  }
+
+  .contact-info h3 {
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0.3em 0em 0.2em 0em;
+  }
+
+  /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .icon img {
+    width:  1em;
+    height: 1em;
+  }
+  
+  .text-box h2 {
+    font-size: 0.8rem;
+  }
+
+  .text-box span{
+    font-size: 0.8rem;
+  }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ##############          Código      Responsive         ############## ***** ** */
+/* ** ***** ##############              Escritorio 1200            ############## ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1250px) {
+
+  body {
+    background-color: rgb(11, 232, 240);
+  }
+
+  /* ############## **  *****     Barra de Navegación    *****  ** ################ */
+
+  #menu ul a {
+    font-size: 0.7em;
+    padding: 0.525em 1em;
+    letter-spacing: 0.0325em;
+  }
+
+  /* ** ***** ###################    Primera Sección   ################### ***** **  */
+  #primera-seccion {
+    width: 96%;
+    gap: 2rem;
+    font-size: 0.8em;
+    padding: 0.5em 0.5em 0.5em 0em;
+  }
+
+  .carrusel{
+    height: 60%;
+    margin:1em;
+  }
+
+  .slider ul{
+    height: 100%;
+    margin: 0.5em 0em 0.5em 0em;
+  }
+
+  .content-form {
+    height:60%;
+    padding:1em;
+  }
+    
+  /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  .icon img {
+    width:  1.5em;
+    height: 1.5em;
+  }
+  
+  .text-box h2 {
+    font-size: 1rem;
+  }
+
+  .text-box span{
+    font-size: 1.1rem;
+  }
+
+}
+
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ####################     Responsive Notebooks   #################### ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 1023px) {
+
+   body {
+    background-color: rgb(11, 26, 240);
+  }
+
+  /* */
+  /* ** ***** ####################  Estructura General de la Barra de Navegación  #################### ***** ** */
+
+
+
+  /* ** ***** ###################    primera sección  ################### ***** **  */
+  #primera-seccion {
+    width: 96%;
+    height: 33em;
+    gap: 2rem;
+    font-size: 0.8em;
+    padding: 0.5em 0.5em 0.5em 0em;
+  }
+
+  .carrusel{
+    height: 60%;
+    margin:1em;
+  }
+
+  .slider ul{
+    height: 100%;
+    margin: 0.5em 0em 0.5em 0em;
+  }
+
+  .formulario {
+    width: 50%;
+    margin: 0em 0.5em 0em 0.5em;
+  }
+
+  .formulario h1 {
+    width: 90%;
+  }
+
+  .content-form {
+    height:30%;
+    padding: 0.25em;
+  }
+
+  .contact-form form p {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0.1em;
+  }
+
+  .contact-info {
+    width: 95%;
+    padding: 0em 0.1em 0.1em 0.2em;
+  }
+
+  .contact-info h3 {
+    font-weight: normal;
+    font-size: 0.5em;
+    margin: 0.1em 0em 0.1em 0em;
+  }
+
+  /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  .icon img {
+    width:  1em;
+    height: 1em;
+  }
+  
+
+  .text-box h2 {
+    font-size: 0.8rem;
+  }
+
+  .text-box span{
+    font-size: 0.9rem;
+  }
+
+}
+
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+/* ** ***** ####################     Responsive Celulares    #################### ***** ** */
+/* # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # # * # * # * # * # * # */
+
+@media all and (max-width: 599px) {
+
+  html {
+    min-width: 32vw;
+  }
+
+  body {
+    background-color: rgb(240, 224, 11);
+  }
+
+  /* ** ***** ###################    Barra de Navegación  ################### ***** **  */
+
+  #menu ul a {
+    font-size: 0.4em;
+    padding: 0.525em 0.7em;
+    letter-spacing: 0.0225em;
+  }
+ 
+
+    /* ** ***** ###################    Primera Seccion  ################### ***** **  */
+  
+  #primera-seccion {
+    height: 65.5em; /*33em;*/
+    gap: 1rem;
+    font-size: 0.4em;
+    padding: 0.3em 0.3em 0.5em 0em;
+    margin: 0 2em 0 2em;
+  }
+
+  .carrusel {
+    height: 25%;
+    margin: 0.5em;
+  }
+
+  .slider ul{
+    height: 100%;
+    margin: 0.5em 0em 0.5em 0em;
+  }
+
+  .content-form {
+    height:60%;
+    padding:1em;
+  }
+
+  .contact-info {
+  font-size: 1em;
+  }
+
+  .contact-info li {
+    font-size: 0.8em;
+    }
+
+  /* ** ***** ####################     Inicio Footer    #################### ***** ** */
+
+  footer p {
+    font-size: 0.5rem;
+  }
+
+  .icon img {
+    width:  0.75em;
+    height: 0.75em;
+  }
+  
+
+  .text-box h2 {
+    font-size: 0.6rem;
+  }
+
+  .text-box span{
+    font-size: 0.7rem;
+  }
+
+}
+
+
+
+
+
+
+
