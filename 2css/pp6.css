@@ -8,7 +8,7 @@ body {
     font-size: 22px;
     color: white; 
     padding-top: 110px;
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(file:///C:/Users/Jos%C3%A9%20Luis/Desktop/TPO/4imagenes/f.png) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(https://github.com/JoseLuisGalvis/Proyecto-4to/blob/master/4img_pag6/pp6fondo.jpg?raw=true) no-repeat center/cover;
     background-attachment: fixed;
     box-sizing: border-box;
 }
